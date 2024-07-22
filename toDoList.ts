@@ -1,16 +1,28 @@
-import inquirer from 'inquirer';
+//Create a script that prompts the user to enter their age and then logs whether they are a minor (under 18) or an adult.
+import inquirer from "inquirer";
 
-inquirer
-  .prompt([
-    /* Pass your questions in here */
-  ])
-  .then((answers) => {
-    // Use user feedback for... whatever!!
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
+let todos=[]
+
+let condition=true
+
+while(condition){
+let addTask=await inquirer.prompt([
+    {
+      name: "ToDoList",
+      type: "input",
+      message: "What item you want ro add in to do list: "
+    },
+
+    {
+      name:"addMore",
+      type:'confirm',
+      message:"Do you want to add more?",
+      default:"false"
+
     }
-  });
+ ] );
+  
+  todos.push(addTask.ToDoList)
+  condition=addTask.addMore
+ console.log(todos)
+}
