@@ -1,9 +1,10 @@
 {
-  "name": "to-do-list",
+  "name": "lara_to-do-list",
   "version": "1.0.0",
   "description": "Typescript fundamental problems",
   "main": "index.js",
   "type": "module",
+  "bin": "toDoList.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "inquirer": "^9.3.6",
+    "lara_to-do-list": "^1.0.0",
     "prompt-sync": "^4.2.0"
   }
 }

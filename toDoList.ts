@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 //Create a script that prompts the user to enter their age and then logs whether they are a minor (under 18) or an adult.
 import inquirer from "inquirer";
 
